@@ -1,16 +1,23 @@
-pycmodule
-=========
+# pycmodule
+#### A python-c extension module example
 
-Python-C Extension Module Practice
+## About
 
-- To compile module
-python setup.py build
+`pycmodule` is a python-c extension module that shows how to create
+python module written in C.
 
-- To use module
-python
-import pycmodule
-pycmodule.hello_world()
+## Build
 
-Note:
-Make sure that the module path is correctly set.
-export PYTHONPATH=`pwd`/build/[xxx]
+    python setup.py build
+
+## Example
+
+    import pycmodule
+    
+    pycmodule.hello_world()
+
+## Notes
+
+Make sure the path is correctly set.
+
+    export PYTHONPATH=`pwd`/build/...
